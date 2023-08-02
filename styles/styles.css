@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #e4fde1;
+  background: #e9d8a6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,11 +17,11 @@ body .form-container {
   width: 400px;
   border-radius: 15px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  background-color: #456990;
+  background-color: #94d2bd;
 }
 body .form-container .form {
   padding: 30px 40px;
-  color: whitesmoke;
+  color: #001219;
 }
 body .form-container .form h2 {
   text-align: center;
@@ -29,11 +29,11 @@ body .form-container .form h2 {
 }
 body .form-container .form button {
   cursor: pointer;
-  background-color: black;
-  border: 2px solid black;
+  background-color: #001219;
+  border: 2px solid #001219;
   border-radius: 4px;
   padding: 10px;
-  color: white;
+  color: whitesmoke;
   font-family: inherit;
   font-size: 16px;
   width: 100%;
@@ -45,12 +45,12 @@ body .form-container .form button {
   position: relative;
 }
 .form-control label {
-  color: yellow;
+  color: #001219;
   display: block;
   margin-bottom: 5px;
 }
 .form-control input {
-  border: 2px solid grey;
+  border: 1px solid grey;
   border-radius: 4px;
   display: block;
   width: 100%;
@@ -59,10 +59,10 @@ body .form-container .form button {
 }
 .form-control input:focus {
   outline: 0;
-  border-color: black;
+  border-color: #001219;
 }
 .form-control small {
-  color: red;
+  color: #9b2226;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -70,11 +70,11 @@ body .form-container .form button {
 }
 
 .form-control.error input {
-  border-color: red;
+  border: 2px solid #9b2226;
 }
 
 .form-control.success input {
-  border-color: green;
+  border: 2px solid #001219;
 }
 
 .form-control.error small {
