@@ -1,6 +1,6 @@
 # Simple Form Validator
 
-This is a basic form validator project using HTML, CSS, and JavaScript.
+This is a basic form validator project using HTML, SCSS, and JavaScript.
 
 ## Features
 
