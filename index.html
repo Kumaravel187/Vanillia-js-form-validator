@@ -3,7 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Javascript From Validator</title>
+    <title>Javascript Form Validator</title>
   </head>
-  <body></body>
+  <body>
+    <section class="form-container">
+      <form id="form" class="form">
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter Username" />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter Email" />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter Password" />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="passwordTwo">Confirm Password</label>
+          <input
+            type="password"
+            id="passwordTwo"
+            placeholder="Enter Password Again"
+          />
+          <small>Error Message</small>
+        </div>
+      </form>
+    </section>
+  </body>
 </html>
