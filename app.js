@@ -23,35 +23,25 @@ function validateEmail(email) {
   return re.test(email);
 }
 
+function checkRequired(inputElArry) {
+  inputElArry.forEach(function (inputEl) {
+    if (inputEl.value.trim() === "") {
+      showErrorMessage(inputEl, `${getFieldName(inputEl)} field is required`);
+    } else {
+      showSuccessMessage(inputEl);
+    }
+  });
+}
+
+function getFieldName(inputEl) {
+  return inputEl.id.charAt(0).toUpperCase() + inputEl.id.slice(1);
+}
+
 function showSuccess() {}
 
 formEl.addEventListener("submit", function (e) {
   // prevent default form behaviour
   e.preventDefault();
 
-  if (usernameEl.value === "") {
-    showErrorMessage(usernameEl, "Username is required");
-  } else {
-    showSuccessMessage(usernameEl);
-  }
-
-  if (emailEl.value === "") {
-    showErrorMessage(emailEl, "Email is required");
-  } else if (!validateEmail(emailEl.value)) {
-    showErrorMessage(emailEl, "Email is unacceptable");
-  } else {
-    showSuccessMessage(emailEl);
-  }
-
-  if (passwordEl.value === "") {
-    showErrorMessage(passwordEl, "Password is required");
-  } else {
-    showSuccessMessage(passwordEl);
-  }
-
-  if (passwordTwoEl.value === "") {
-    showErrorMessage(passwordTwoEl, "Password is required");
-  } else {
-    showSuccessMessage(passwordTwoEl);
-  }
+  checkRequired([usernameEl, emailEl, passwordEl, passwordTwoEl]);
 });
