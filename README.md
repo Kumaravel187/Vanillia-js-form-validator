@@ -10,8 +10,9 @@ This is a basic form validator project using HTML, SCSS, and JavaScript.
 
 ## Snapshots
 
-![Form when fields are not added](image.png)
-![Form when fields are added](image-1.png)
+<img src="./image.png" alt="Form when fields are not added" width="300px" />
+
+<img src="./image-1.png" alt="Form when fields are added" width="300px" />
 
 ## Usage
 
