@@ -1,32 +1,48 @@
+// Import variables
 @import "variables";
 
+// Apply CSS reset
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+// Set global styles for body
 body {
+  // Set background color using a variable
   background: $bg-color;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  // Apply custom font-family using a variable
   font-family: $font-family;
+
+  // Styles for the form container
   .form-container {
     width: 400px;
     border-radius: 15px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    // Apply background color using a variable
     background-color: $form-color;
+
+    // Styles for the form
     .form {
       padding: 30px 40px;
+      // Apply typography color using a variable
       color: $typography-color;
+
+      // Styles for form header
       h2 {
         text-align: center;
         margin-bottom: 20px;
       }
+
+      // Styles for submit button
       button {
         cursor: pointer;
+        // Apply background color and border color using a variable
         background-color: $typography-color;
         border: 2px solid $typography-color;
         border-radius: 4px;
@@ -34,24 +50,29 @@ body {
         color: whitesmoke;
         font-family: inherit;
         font-size: 16px;
-        // margin-top: 20px;
+        // Set button width to 100%
         width: 100%;
       }
     }
   }
 }
 
+// Styles for form controls
 .form-control {
-  // border: 1px solid yellow;
+  // margin and padding settings
   margin-bottom: 10px;
   padding-bottom: 20px;
   position: relative;
-  //   border: 1px solid white;
+
+  // Styles for label
   label {
+    // Apply typography color using a variable
     color: $typography-color;
     display: block;
     margin-bottom: 5px;
   }
+
+  // Styles for input elements
   input {
     border: 1px solid grey;
     border-radius: 4px;
@@ -59,28 +80,40 @@ body {
     width: 100%;
     padding: 10px;
     font-size: 14px;
+
+    // Styles for input focus state
     &:focus {
       outline: 0;
+      // Change border color on focus using a variable
       border-color: $typography-color;
     }
   }
+
+  // Styles for error message
   small {
+    // Apply error color using a variable
     color: $error;
     position: absolute;
     bottom: 0;
     left: 0;
+    // Hide error message by default
     visibility: hidden;
   }
 }
 
+// Styles for input with error
 .form-control.error input {
+  // Apply error border color using a variable
   border: 2px solid $error;
 }
 
+// Styles for input with success
 .form-control.success input {
+  // Apply success border color using a variable
   border: 2px solid $typography-color;
 }
 
+// Show error message for input with errors
 .form-control.error small {
   visibility: visible;
 }

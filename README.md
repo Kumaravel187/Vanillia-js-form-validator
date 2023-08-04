@@ -8,6 +8,11 @@ This is a basic form validator project using HTML, SCSS, and JavaScript.
 - Displays error messages for invalid inputs.
 - Highlights the fields with errors.
 
+## Snapshots
+
+![Form when fields are not added](image.png)
+![Form when fields are added](image-1.png)
+
 ## Usage
 
 1. Clone the repository:

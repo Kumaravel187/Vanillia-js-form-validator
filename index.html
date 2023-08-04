@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Set character encoding and viewport for responsiveness -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="./styles/styles.css" />
+    <!-- Set title of the webpage -->
     <title>Javascript Form Validator</title>
   </head>
   <body>
+    <!-- Form container section -->
     <section class="form-container">
+      <!-- Form element -->
       <form id="form" class="form">
+        <!-- Form header -->
         <h2>Register Here</h2>
+        <!-- Username input -->
         <div class="form-control">
           <label for="username">Username</label>
           <input type="text" id="username" placeholder="Enter Username" />
           <small>Error Message</small>
         </div>
+        <!-- Email input -->
         <div class="form-control">
           <label for="email">Email</label>
           <input type="text" id="email" placeholder="Enter Email" />
           <small>Error Message</small>
         </div>
+        <!-- Password input -->
         <div class="form-control">
           <label for="password">Password</label>
           <input type="password" id="password" placeholder="Enter Password" />
           <small>Error Message</small>
         </div>
+        <!-- Confirm Password input -->
         <div class="form-control">
           <label for="passwordTwo">Confirm Password</label>
           <input
@@ -34,9 +44,11 @@
           />
           <small>Error Message</small>
         </div>
+        <!-- Submit button -->
         <button type="submit">Submit</button>
       </form>
     </section>
+    <!-- Link to external JavaScript file -->
     <script src="./app.js"></script>
   </body>
 </html>
